@@ -14,4 +14,8 @@ export class TwilioService {
   createRoom(value) {
     return this.http.post(`${this.serverURL}/create-room`, value);
   }
+
+  joinRoom(value) {
+    return this.http.post(`${this.serverURL}/join-room`, value);
+  }
 }

@@ -6,7 +6,9 @@ import { AppComponent } from "./app.component";
 import { EnterPageComponent } from "./enter-page/enter-page.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
-import { RoomComponent } from './room/room.component';
+import { RoomComponent } from "./room/room.component";
+
+import { CookieService } from "ngx-cookie-service";
 
 @NgModule({
   declarations: [AppComponent, EnterPageComponent, RoomComponent],
@@ -17,7 +19,7 @@ import { RoomComponent } from './room/room.component';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
