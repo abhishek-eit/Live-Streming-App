@@ -1,0 +1,45 @@
+<div class="wrapper">
+  <div class="cont" #cont>
+    <div class="form join" [formGroup]="joinForm">
+      <h2>Join A Room</h2>
+      <label>
+        <span>Your Name</span>
+        <input type="text" formControlName="userName" />
+      </label>
+      <label>
+        <span>Room ID</span>
+        <input type="text" formControlName="roomId" />
+      </label>
+      <button class="submit" type="submit" (click)="join()">Join</button>
+    </div>
+
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>Create Room</h2>
+          <p>Create your own room instead and invite others..</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>Join Room</h2>
+          <p>Have a room id, use it to join a room</p>
+        </div>
+        <div class="img-btn" (click)="cont.classList.toggle('s-create')">
+          <span class="m-up">Create</span>
+          <span class="m-in">Join</span>
+        </div>
+      </div>
+      <div class="form create" [formGroup]="createForm">
+        <h2>Create New Room</h2>
+        <label>
+          <span>Your Name</span>
+          <input type="text" formControlName="userName" />
+        </label>
+        <label>
+          <span>Room ID</span>
+          <input type="text" formControlName="roomId" />
+        </label>
+        <button type="button" class="submit" (click)="create()">Create</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+{
+  "name": "twilio-node",
+  "version": "1.0.0",
+  "description": "This is twilio node-angular application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Choudhary",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "twilio": "^3.51.0"
+  }
+}
